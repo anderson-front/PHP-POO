@@ -1,13 +1,15 @@
 <?php
+namespace App\Estoque;
 
 class Produto
 {
-    public $id, $descricao;
+    public $id, $descricao,$qtd;
 
-    public function cadastrar($id, $descricao)
+    public function cadastrar($id, $descricao,$qtd)
     {
         $this->id = $id;
         $this->descricao = $descricao;
+        $this->qtd = $qtd;
     }
 
     public function imprimir()
@@ -15,6 +17,7 @@ class Produto
 
         $r = 'Produto Id: ' . $this->id . ' | ';
         $r  .= 'Descrição:' . $this->descricao . '<br>' ;
+        $r  .= 'Descrição:' . $this->qtd. '<br>' ;
         return $r;
     }
 }

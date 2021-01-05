@@ -1,4 +1,5 @@
 <?php
+namespace  App\Vendas;
 
 class Usuario
 {
@@ -20,3 +21,5 @@ class Usuario
 
  
 }
+
+

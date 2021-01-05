@@ -3,6 +3,7 @@
 class ContaPoupanca extends Conta{
 
     public $aniversario;
+    public $cidade;
 
     public function __construct($agencia,$codigo,$data_criacao,$titular,$senha,$saldo,$cancelada,$aniversario,$cidade)
     {
@@ -10,7 +11,9 @@ class ContaPoupanca extends Conta{
         
         $this->aniversario=$aniversario;
         $this->cidade = $cidade;
+        
     }
+
 
 
     public function Retirar($quantia){
@@ -23,8 +26,8 @@ class ContaPoupanca extends Conta{
         }
 
         return true;
+        
     }
-
-    
+  
 
 }
